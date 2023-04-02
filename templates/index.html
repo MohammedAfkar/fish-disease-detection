@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Home
+{%endblock%}
+
+{% block content%}  
+
+<div style="padding-left:10em; margin-top:2em">
+    <h2><b>Upload Image for Fish disease identification</b></h2>
+    <br>
+   
+    <form method="post" enctype="multipart/form-data">
+
+<div class="col-md-4 col-sm-4"><label for="fname">Upload Image File Here:</label></div> <input name="filePath" type="file"><br><br>
+<br>
+
+<input type="submit" value="Upload"></div>
+
+<h2 style="padding-left:8em; margin-top:2em; font-size:20px"><b>Use camera to identify fish disease</b>{{predictedLabel}}</h2>
+<button style="margin-left:12em; margin-top:2em; font-size:15px">Use camera</button>
+
+</form>
+<br>
+
+
+{% endblock %}
